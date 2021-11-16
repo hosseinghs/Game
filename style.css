@@ -1,0 +1,54 @@
+
+
+body {
+      margin: 0;
+}
+
+section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+}
+ul {
+      display: grid;
+      grid-template-columns: repeat(4,120px);
+      grid-gap: 1px;
+}
+
+li {
+      width: 120px;
+      height: 120px;
+      background-color: #222;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+i {
+      font-size: 4em !important;
+      color: white;
+      display: none !important;
+}
+
+i.show {
+      display: inline-block !important;
+}
+
+li.show i {
+      display: inline-block !important;
+}
+
+li.matched {
+      background-color: lightgreen;
+      pointer-events: none;
+}
+
+li.unmatched {
+      background-color: red;
+}
+
+
